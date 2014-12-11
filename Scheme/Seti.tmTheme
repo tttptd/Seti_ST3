@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>name</key>
-        <string>Seti_Mod</string>
+        <string>Seti</string>
         <key>settings</key>
         <array>
 <!-- ====================================
@@ -22,7 +22,7 @@ General
                     <key>invisibles</key>
                     <string>#F3FFB51A</string>
                     <key>lineHighlight</key>
-                    <string>#101112</string>
+                    <string>#222528</string>
 
                     <key>findHighlight</key>
                     <string>#4FA5C7</string>
@@ -31,12 +31,12 @@ General
                     <key>gutter</key>
                     <string>#0D1011</string>
                     <key>gutterForeground</key>
-                    <string>#2B3337</string>
+                    <string>#3c474d</string>
 
                     <key>selection</key>
-                    <string>#4FA5C7</string>
-                    <key>selectionForeground</key>
-                    <string>#fefefe</string>
+                    <string>#1c3c4a</string>
+                    <!-- <key>selectionForeground</key>
+                    <string>#fefefe</string> -->
 
                     <key>bracketContentsOptions</key>
                     <string>underline</string>
@@ -77,7 +77,7 @@ Comment
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#41535b</string>
+                    <string>#526a76</string>
                 </dict>
             </dict>
 
@@ -690,7 +690,7 @@ Html
             <!-- string -->
             <dict>
                 <key>scope</key>
-                <string>meta.tag.other.html meta.attribute-with-value.id.html string.quoted.double.html meta.toc-list.id.html, meta.tag.block.any.html string.quoted.double.html, meta.tag.inline.any.html string.quoted.double.html, meta.tag.other.html string.quoted.double.html </string>
+                <string>meta.tag.other.html meta.attribute-with-value.id.html string.quoted.double.html meta.toc-list.id.html, meta.tag.block.any.html string.quoted.double.html, meta.tag.inline.any.html string.quoted.double.html, meta.tag.other.html string.quoted.double.html</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -722,7 +722,7 @@ Html
 
             <dict>
                 <key>scope</key>
-                <string>meta.tag.any.html string.quoted.double.html constant.character.entity.html, meta.tag.any.html string.quoted.double.html constant.character.entity.html punctuation.definition.entity.html </string>
+                <string>meta.tag.any.html string.quoted.double.html constant.character.entity.html, meta.tag.any.html string.quoted.double.html constant.character.entity.html punctuation.definition.entity.html</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -792,7 +792,7 @@ Html
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#d4d7d6</string>
+                    <string>#55B5DB</string>
                 </dict>
             </dict>
 

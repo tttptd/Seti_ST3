@@ -27,7 +27,7 @@ General
                     <key>findHighlight</key>
                     <string>#4FA5C7</string>
                     <key>inactiveSelection</key>
-                    <string>#2F6277</string>
+                    <string>#1c3c4a</string>
                     <key>gutter</key>
                     <string>#0D1011</string>
                     <key>gutterForeground</key>
@@ -284,30 +284,43 @@ Function Name
 <!-- ====================================
 Dictionary
 ====================================== -->
+        <dict>
+            <key>name</key>
+            <string>Dict key</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary meta.structure.dictionary.key, constant.other.object.key string</string>
+            <key>settings</key>
             <dict>
-                <key>name</key>
-                <string>Dict key</string>
-                <key>scope</key>
-                <string>meta.structure.dictionary meta.structure.dictionary.key, constant.other.object.key string</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string>bold</string>
-                    <key>foreground</key>
-                    <string>#A9FF98</string>
-                </dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#A9FF98</string>
             </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Dict Value</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary.value</string>
+            <key>settings</key>
             <dict>
-                <key>name</key>
-                <string>Dict Value</string>
-                <key>scope</key>
-                <string>meta.structure.dictionary.value</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#7DC5F9</string>
-                </dict>
+                <key>foreground</key>
+                <string>#7DC5F9</string>
             </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Item-access arguments</string>
+            <key>scope</key>
+            <string>meta.item-access.arguments</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#11BD7C</string>
+            </dict>
+        </dict>
 
 <!-- ====================================
 Function
@@ -440,21 +453,7 @@ Variable
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#e6cd69</string>
-                </dict>
-            </dict>
-
-            <dict>
-                <key>name</key>
-                <string>Language Variable</string>
-                <key>scope</key>
-                <string>variable.language, variable.parameter.function.language</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string>italic</string>
-                    <key>foreground</key>
-                    <string>#9fca56</string>
+                    <string>#2ed45f</string>
                 </dict>
             </dict>
 
@@ -492,6 +491,23 @@ Variable
                 </dict>
             </dict>
 
+            <!-- (this) -->
+            <dict>
+                <key>name</key>
+                <string>Language Variable</string>
+                <key>scope</key>
+                <string>variable.language, variable.parameter.function.language</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic</string>
+                    <key>foreground</key>
+                    <string>#1CFF7B</string>
+                    <key>background</key>
+                    <string>#02AEFF30</string>
+                </dict>
+            </dict>
+
 <!-- ====================================
 Variable Assignment
 ====================================== -->
@@ -526,39 +542,66 @@ Keyword
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#9fca56</string>
-                </dict>
-            </dict>
-
-            <dict>
-                <key>scope</key>
-                <string>keyword.control</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#9fca56</string>
-                </dict>
-            </dict>
-
-            <dict>
-                <key>scope</key>
-                <string>keyword.operator</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#9fca56</string>
+                    <string>#009FFF</string>
                 </dict>
             </dict>
 
             <dict>
                 <key>name</key>
-                <string>Keyword other</string>
+                <string>keyword.control, keyword.control.js</string>
                 <key>scope</key>
-                <string>keyword.other</string>
+                <string>keyword.control, keyword.control.js</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF026A</string>
+                    <string>#17e16c</string>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>Operator</string>
+                <key>scope</key>
+                <string>keyword.operator -keyword.operator.dereference, keyword.operator.new.js</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#1CFF7B</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Comparison operator</string>
+                <key>scope</key>
+                <string>keyword.operator.comparison, keyword.operator.logical</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#48FFC2</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Assignment operator</string>
+                <key>scope</key>
+                <string>keyword.operator.assignment</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#a074c4</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Augmented assignment operator</string>
+                <key>scope</key>
+                <string>keyword.operator.assignment.augmented</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFBBF4</string>
                 </dict>
             </dict>
 
@@ -591,15 +634,38 @@ Type Name
 <!-- ====================================
 Class Name
 ====================================== -->
+        <dict>
+            <key>scope</key>
+            <string>meta.class, entity.name.class, entity.name.type.class</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>meta.class, entity.name.class, entity.name.type.class</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#ff4377</string>
-                </dict>
+                <key>foreground</key>
+                <string>#ff4377</string>
             </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Class</string>
+            <key>scope</key>
+            <string>meta.class.identifier, entity.name.type.class, variable.other.class</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#CD3F45</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Inherited class</string>
+            <key>scope</key>
+            <string>entity.other.inherited-class</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#80FCFF</string>
+            </dict>
+        </dict>
 
 <!-- ====================================
 Invalid

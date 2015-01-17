@@ -547,7 +547,7 @@
     {
         "class": "tree_row",
         "layer0.texture": null,
-        "layer0.tint": [27, 28, 29],
+        "layer0.tint": [150, 150, 150, 100],
         "layer0.opacity": 0
     },
     // Sidebar row selected

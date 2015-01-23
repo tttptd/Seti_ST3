@@ -884,8 +884,8 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [255,255,255],
-        "match_fg": [104,81,49],
+        "fg": [200,200,200],
+        "match_fg": [236,222,103],
         "selected_fg": [255,255,255],
         "selected_match_fg": [255,223,0]
     },

@@ -524,7 +524,7 @@
     // Sidebar tree || entries
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 4],
+        "row_padding": [8, 6],
         "indent": 10,
         "indent_offset": 14,
         "indent_top_level": false // which make OpenFiles & Folders expandable

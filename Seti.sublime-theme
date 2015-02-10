@@ -519,13 +519,13 @@
         "class": "sidebar_container",
         "layer0.opacity": 1,
         "layer0.tint": [16,17,18],
-        "content_margin": [0, 0, 1, 0],
+        "content_margin": [0, 0, 1, 0]
     },
     // Sidebar tree || entries
     {
         "class": "sidebar_tree",
         "row_padding": [8, 6],
-        "indent": 10,
+        "indent": 14,
         "indent_offset": 14,
         "indent_top_level": false // which make OpenFiles & Folders expandable
     },

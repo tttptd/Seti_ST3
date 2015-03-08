@@ -599,7 +599,8 @@
     // Sidebar files
     {
         "class": "sidebar_label",
-        "color": [170,170,170]
+        "color": [200,200,200],
+        "font.size": 12.5
     },
     {
         "class": "sidebar_label",

@@ -659,7 +659,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "font.bold": true
+        "font.bold": false
     },
     // Sidebar open files entry selected
     {

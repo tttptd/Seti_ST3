@@ -6,9 +6,9 @@
         <string>Seti</string>
         <key>settings</key>
         <array>
-<!-- ====================================
-General
-====================================== -->
+            <!-- ====================================
+            General
+            ====================================== -->
             <dict>
                 <key>settings</key>
                 <dict>
@@ -459,6 +459,20 @@ Variable
 
             <dict>
                 <key>name</key>
+                <string>Language Variable</string>
+                <key>scope</key>
+                <string>variable.language, variable.parameter.function.language</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic</string>
+                    <key>foreground</key>
+                    <string>#9fca56</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>name</key>
                 <string>Local name</string>
                 <key>scope</key>
                 <string>entity.other.attribute-name.localname</string>
@@ -604,6 +618,18 @@ Keyword
                     <string>#FFBBF4</string>
                 </dict>
             </dict>
+            <dict>
+                <key>name</key>
+                <string>Keyword other</string>
+                <key>scope</key>
+                <string>keyword.other</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FF026A</string>
+                </dict>
+            </dict>
+
 
 <!-- ====================================
 Structure Name
@@ -1899,6 +1925,42 @@ Other
                 </dict>
             </dict>
 
+            <!-- ====================================
+            SublimeLinter
+            ====================================== -->
+            <dict>
+                <key>name</key>
+                <string>SublimeLinter Warning</string>
+                <key>scope</key>
+                <string>sublimelinter.mark.warning</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#DDB700</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>SublimeLinter Error</string>
+                <key>scope</key>
+                <string>sublimelinter.mark.error</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#D02000</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>SublimeLinter Gutter Mark</string>
+                <key>scope</key>
+                <string>sublimelinter.gutter-mark</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFFFFF</string>
+                </dict>
+            </dict>
         </array>
         <key>semanticClass</key>
         <string>Seti</string>

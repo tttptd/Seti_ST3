@@ -7,13 +7,16 @@
 
 # Notes
 
+- I included a folder with some files types from `jesseweed` and `DanBrooker` to test the icons ,you should probably add some of them to the "file_exclude_patterns" as ST wont open them anyway.
+
 - Any thing less than 'ST3 Build 3062' wont get the sidebar icons to work.
 
 - if you used any of the resources in this repo into your own release ,plz appreciate the hard work and mention the original authors.
 
 - A New/Better syntax Highlight released under [Seti_UX](https://sublime.wbond.net/packages/Seti_UX).
 
-- [Seti_JetBrains](https://github.com/zchee/Seti_JetBrains) by [zchee](https://github.com/zchee) :tophat:.
+- [zchee](https://github.com/zchee) made a Port for JetBrains [Seti_JetBrains](https://github.com/zchee/Seti_JetBrains) :tophat:.
+
 
 ## Install
 
@@ -33,11 +36,11 @@ Theme is listed as [Seti_UI](https://sublime.wbond.net/packages/Seti_UI) on Will
 
 ## Setup
 
-Activate the `Theme` and `Color-Scheme` by modifying your user preferences file, which you can find using the menu item `Preferences -> Settings - User` in Sublime Text or use `Schemr` & `Themr` by [Ben Weier](https://github.com/benweier).
+Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Preferences -> Settings - User` in Sublime Text or get `Schemr` & `Themr` by [Ben Weier](https://github.com/benweier).
 
 ### Example settings
 
-```json
+```
 {
   "theme": "Seti.sublime-theme",
   "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
@@ -50,12 +53,9 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
 
 ```
 {
-  "Seti_no_bar_undertabs": true,          // remove the 4px bar under the tabs
-  "Seti_no_blue_bar": true,          	  // remove the blue bar under the un-saved tabs
-  "Seti_blue_tab_label": true,            // change the un-saved tab label to blue
-  "Seti_orange_label": true,			  // change label color to orange
-  "Seti_orange_button": true,			  // change blue tab buttons to orange
+  "Seti_mouse_wheel_tabswitch": true,     // allow tab switching with mouse wheel
 
+  "Seti_no_bar_undertabs": true,          // remove the 4px bar under the tabs
   "Seti_tabs_small": true,                // tabs height = 35
   "Seti_tabs_med": true,                  // tabs height = 40
 
@@ -73,15 +73,14 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
   "Seti_sb_tree_med": true,               // sidebar tree padding = 15
   "Seti_sb_tree_small": true,             // sidebar tree padding = 10
 
-  "Seti_sb_tree_tiny": true,              // check (issues/88)
-  "Seti_sb_tree_miny": true,              // check (issues/88)
+  "Seti_sb_tree_tiny": true,              // check (https://github.com/ctf0/Seti_ST3/issues/88)
+  "Seti_sb_tree_miny": true,              // check (https://github.com/ctf0/Seti_ST3/issues/88)
 
-  "Seti_pad_5": true,                     // use with line_padding_bottom / line_padding_top = 5
-  "Seti_pad_3": true,                     // use with line_padding_bottom / line_padding_top = 3
-
-  "Seti_sb_wild": true,                   // experiment for sidebar
+  "Seti_sb_wild": true,                   // experiment
   "Seti_rainbow": true,                   // something different
-  "Seti_in_4_a_treat": true,              // something crazy
+
+  "Seti_pad_5": true                      // use with line_padding_bottom / line_padding_top = 5
+  "Seti_pad_3": true                      // use with line_padding_bottom / line_padding_top = 3
 }
 ```
 
@@ -99,15 +98,14 @@ Activate the `Theme` and `Color-Scheme` by modifying your user preferences file,
 
 - `Neon` by [Matt Morrison](https://github.com/MattDMo/Neon-color-scheme) "HOF".
 
-- `Cyanide` by [lefoy](https://github.com/lefoy/cyanide-theme) "HOF".
 
 ## Differences from the original
 
 - No file icon in the opened tabs, ST lacks this.
 
-- <strike>Not as icon rich as the original because ST can't see anything other than Extensions ,and even thou its still hard to make it use the icon you want</strike>. ( A work around has been added on v7 )
+- Not as icon rich as the original because ST can't see anything other than Extensions ,and even thou its still hard to make it use the icon you want.
 
-- Some scopes have different colors in Atom like the `:` ,this is related to the tmLanguage file in ST ,also note that Atom sometimes will display a different color than ST "even if the scope name matches in both editors".
+- Some scopes have different colors in Atom like the (:) ,this is related to the tmLanguage file in ST ,also note that Atom sometimes will display a different color than ST "even if the scope name matches in both editors".
 
 - Current line number highlight color, ST lacks this.
 
